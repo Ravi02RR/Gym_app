@@ -6,39 +6,82 @@ export const downloadPDF = (planType, userInfo, planContent) => {
     element.innerHTML = `
         <style>
             body {
-                font-family: Arial, sans-serif;
-                font-size: 6px;
-                line-height: 1.2;
-                color: #333;
+                font-family: 'Arial', sans-serif;
+                font-size: 12px;
+                line-height: 1.6;
+                color: #000;
+                background-color: #fff;
             }
-            h1 { font-size: 10px; color: #4f46e5; margin: 4px 0; }
-            h2 { font-size: 8px; color: #4f46e5; margin: 3px 0; }
-            h3 { font-size: 7px; color: #4f46e5; margin: 2px 0; }
+            h1 { 
+                font-size: 24px; 
+                color: #000; 
+                margin: 20px 0; 
+                text-align: center; 
+            }
+            h2 { 
+                font-size: 20px; 
+                color: #000; 
+                margin: 15px 0; 
+            }
+            h3 { 
+                font-size: 18px; 
+                color: #000; 
+                margin: 10px 0; 
+            }
             table {
                 width: 100%;
                 border-collapse: collapse;
-                margin-bottom: 4px;
-                font-size: 5px;
+                margin-bottom: 15px;
+                font-size: 12px;
             }
             th, td {
-                border: 0.5px solid #ddd;
-                padding: 1px;
+                border: 1px solid #000;
+                padding: 8px;
                 text-align: left;
             }
-            th { background-color: #f2f2f2; }
+            th { 
+                background-color: #f2f2f2; 
+                font-weight: bold; 
+            }
             .user-info {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 2px;
-                margin-bottom: 4px;
-                font-size: 6px;
+                gap: 10px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                background-color: #fff;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
-            .user-info p { margin: 0; flex-basis: calc(33% - 2px); }
-            ul, ol { margin: 2px 0; padding-left: 10px; }
-            li { margin-bottom: 1px; }
+            .user-info p { 
+                margin: 0; 
+                flex-basis: calc(33% - 10px);
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            }
+            ul, ol { 
+                margin: 10px 0; 
+                padding-left: 20px; 
+            }
+            li { 
+                margin-bottom: 5px; 
+            }
+            .plan-content {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                margin-bottom: 20px;
+            }
+            .block {
+                margin-bottom: 20px;
+            }
         </style>
         <h1>${planType.charAt(0).toUpperCase() + planType.slice(1)} Plan for ${userInfo.name}</h1>
-        <div class="user-info">
+        <div class="user-info block">
             <p><strong>Age:</strong> ${userInfo.age}</p>
             <p><strong>Height:</strong> ${userInfo.height} cm</p>
             <p><strong>Weight:</strong> ${userInfo.weight} kg</p>
@@ -46,15 +89,15 @@ export const downloadPDF = (planType, userInfo, planContent) => {
             <p><strong>Diet Type:</strong> ${userInfo.dietType}</p>
             <p><strong>Goal:</strong> ${userInfo.goal}</p>
         </div>
-        <div class="plan-content">
+        <div class="plan-content block">
             ${planContent}
         </div>`;
 
     html2pdf().from(element).set({
-        margin: [2, 2, 2, 2],
+        margin: [15, 15, 15, 15],
         filename: `${userInfo.name}_${planType}_plan.pdf`,
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: [297, 420], orientation: 'portrait' }, // A3 size
+        html2canvas: { scale: 2, backgroundColor: '#fff' },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
         pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
     }).save();
 };

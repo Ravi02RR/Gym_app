@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
-
+import Loader from "../Components/dietplanner/Loader.jsx";
 // Lazy load the components
 const Home = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.Home })));
 const GroqComponent = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.GroqComponent })));

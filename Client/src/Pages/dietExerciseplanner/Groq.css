@@ -1,87 +1,60 @@
 .input-field {
     width: 100%;
-    padding: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 3px;
     margin-bottom: 4px;
-    border: 1px solid #ccc;
-    border-color: gray;
-    border-radius: 4px;
+    border-radius: 10px;
     outline: none;
-
-    transition: duration-300;
 }
 
-.plan-content {
-    max-width: none;
-}
-
-.plan-content h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #4f46e5;
-    margin-bottom: 4px;
-}
-
-.plan-content h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #4338ca;
-    margin-bottom: 3px;
-}
-
-.plan-content h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #4338ca;
-    margin-bottom: 2px;
-}
-
-.plan-content p {
-    margin-bottom: 4px;
-}
-
-.plan-content ul,
-.plan-content ol {
-    margin-bottom: 4px;
-    padding-left: 1rem;
-}
-
-.plan-content table {
+.button-primary {
     width: 100%;
-    margin-bottom: 4px;
-    border-collapse: collapse;
+    padding: 3px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: duration 300ms ease-in-out;
 }
 
-.plan-content th,
-.plan-content td {
-    border: 1px solid #ccc;
-    border-color: gray;
-    padding: 0.75rem;
-    font-size: 0.875rem;
+.button-secondary {
+    width: 100%;
+    padding: 3px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: duration 300ms ease-in-out;
 }
 
-.plan-content th {
-    background-color: #EDF2F7;
-    font-weight: 600;
+.prose-invert {
+    color: gray(300);
 }
 
-.plan-content th {
-    background-color: #EDF2F7;
-    font-weight: 600;
+.prose-invert h1,
+.prose-invert h2,
+.prose-invert h3,
+.prose-invert h4,
+.prose-invert h5,
+.prose-invert h6 {
+    color: blue(400);
 }
 
-.collapse-content {
-    max-height: 1000px;
-    opacity: 1;
-    transition: max-height 0.5s ease-out, opacity 5s ease-out;
-    overflow: hidden;
+.prose-invert a {
+    color: blue(400);
+    hover: blue(300);
 }
 
-.collapsed .collapse-content {
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 0.5s ease-in, opacity 5s ease-in;
+.prose-invert strong {
+    color: white;
+}
+
+.prose-invert table {
+    border-color: gray(700);
+}
+
+.prose-invert th {
+    background-color: gray(700);
+    color: gray(300);
+}
+
+.prose-invert td {
+    border-color: gray(700);
 }

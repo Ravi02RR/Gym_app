@@ -24,6 +24,14 @@ const Navbar = () => {
                         About
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink
+                        to="/planner"
+                        className={getNavLinkClass}
+                    >
+                        Planner
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );

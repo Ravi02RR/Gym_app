@@ -25,10 +25,10 @@ app.get("/", (req, res) => {
 });
 
 // Route imports
-// const userRouter = require("./routes/user.route.js");
+const userRouter = require("./routes/user.route.js");
 
 // Routes
-// app.use("/user", userRouter);
+app.use("/user", userRouter);
 
 // Server & Database Connection
 app.listen(process.env.PORT, () => {

@@ -32,6 +32,14 @@ const Navbar = () => {
                         Planner
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink
+                        to="/posture"
+                        className={getNavLinkClass}
+                    >
+                        P)ose Tracking
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );

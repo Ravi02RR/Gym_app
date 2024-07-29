@@ -13,8 +13,8 @@ app.use(CORS(
 ));
 
 
-const postureservice = 'http://localhost:5000';
-const userService = 'http://127.0.0.1:5000/';
+const postureservice = 'http://127.0.0.1:5000';
+const userService = 'na';
 const paymentService = 'http://localhost:8000';
 
 

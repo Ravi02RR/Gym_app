@@ -1,6 +1,5 @@
+import React from 'react';
 
-
-// eslint-disable-next-line react/prop-types
 const ExerciseSelector = ({ exercises, selectedExercise, onSelect }) => {
   return (
     <div className="exercise-selector flex flex-col items-center my-4">

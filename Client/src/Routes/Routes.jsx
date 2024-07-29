@@ -6,8 +6,8 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 const Home = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.Home })));
 const GroqComponent = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.GroqComponent })));
 const Layout = lazy(() => import("../Layout"));
-//const PostureTraker = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.PostureTraker })));
-const PoseTracking = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.PoseTracking })));
+const PostureTraker = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.PostureTraker })));
+//const PoseTracking = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.PoseTracking })));
 
 // Error boundary component
 class ErrorBoundary extends React.Component {
@@ -82,7 +82,7 @@ const router = createBrowserRouter(
                     element={
                         <ErrorBoundary>
                             <Suspense fallback={<Loading />}>
-                                <PoseTracking />
+                                <PostureTraker />
                             </Suspense>
                         </ErrorBoundary>
                     }

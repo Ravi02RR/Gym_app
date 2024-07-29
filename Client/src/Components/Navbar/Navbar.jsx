@@ -37,7 +37,7 @@ const Navbar = () => {
                         to="/posture"
                         className={getNavLinkClass}
                     >
-                        P)ose Tracking
+                        Pose Tracking
                     </NavLink>
                 </li>
             </ul>

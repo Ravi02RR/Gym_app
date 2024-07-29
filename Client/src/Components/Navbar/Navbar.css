@@ -1,0 +1,19 @@
+nav {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .text-red-500 {
+    transition: color 0.3s ease;
+}
+
+nav .text-red-500:hover {
+    color: #ff4b4b;
+}
+
+nav .text-white {
+    transition: color 0.3s ease;
+}
+
+nav .text-white:hover {
+    color: #ccc;
+}

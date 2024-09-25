@@ -1,13 +1,15 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Webcam from 'react-webcam';
-import PoseAnalyzer from './PoseAnalyzer.jsx';
+import PoseAnalyzer from './PoseAnalyzer';
 
+// eslint-disable-next-line react/prop-types
 const ExerciseDisplay = ({ selectedExercise }) => {
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const [count, setCount] = useState(0);
   const [feedback, setFeedback] = useState('');
   const [exerciseState, setExerciseState] = useState('ready');
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <div className="bg-gray-900 min-h-screen w-full text-white p-6">
@@ -15,10 +17,14 @@ const ExerciseDisplay = ({ selectedExercise }) => {
         <h1 className="text-3xl font-bold mb-6 text-center text-blue-400">
           Exercise Tracker
         </h1>
-        
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1">
             <div className="relative aspect-video">
+              {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-gray-800 rounded-lg">
+                  <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+                </div>
+              )}
               <Webcam
                 audio={false}
                 ref={webcamRef}
@@ -32,7 +38,6 @@ const ExerciseDisplay = ({ selectedExercise }) => {
               />
             </div>
           </div>
-          
           <div className="flex-1 bg-gray-800 rounded-lg p-6 shadow-lg">
             <h2 className="text-2xl font-bold mb-4 text-blue-400">
               {selectedExercise} Pose Tracking
@@ -55,17 +60,14 @@ const ExerciseDisplay = ({ selectedExercise }) => {
             </div>
           </div>
         </div>
-        
         <PoseAnalyzer
           webcamRef={webcamRef}
           canvasRef={canvasRef}
           selectedExercise={selectedExercise}
-          count={count}
           setCount={setCount}
-          feedback={feedback}
           setFeedback={setFeedback}
-          exerciseState={exerciseState}
           setExerciseState={setExerciseState}
+          setIsLoading={setIsLoading}
         />
       </div>
     </div>

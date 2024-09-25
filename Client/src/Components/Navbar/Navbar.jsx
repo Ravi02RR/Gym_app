@@ -69,7 +69,7 @@ const Navbar = () => {
                 initial="hidden"
                 animate={isOpen ? "visible" : "hidden"}
                 variants={containerVariants}
-                className="fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center lg:hidden"
+                className="z-50 fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center lg:hidden "
             >
                 <ul className="space-y-6 text-center text-xl z-20">
                     <li>

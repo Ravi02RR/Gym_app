@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css'; 
+import { FaBars, FaTimes, FaDumbbell } from 'react-icons/fa';
+import './Navbar.css';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     const getNavLinkClass = ({ isActive }) => {
-        return isActive ? "text-red-500" : "text-white";
+        return isActive ? "text-blue-600" : "text-white";
     };
 
     const containerVariants = {
@@ -22,14 +22,14 @@ const Navbar = () => {
 
     return (
         <nav className="bg-gray-900 p-4 w-full z-50">
-            <div className="flex justify-between items-center">
-                <div className="text-white text-xl"><Link to={'/'}>Gym</Link></div>
+            <div className="flex justify-between items-center ">
+                <div className="text-white text-xl "><Link to={'/'} className='flex justify-center items-center gap-2 text-blue-600 text-3xl font-bold'><FaDumbbell />Gym</Link></div>
                 <div className="lg:hidden">
                     <button onClick={toggleNavbar}>
                         {isOpen ? <FaTimes className="text-white text-2xl z-20" /> : <FaBars className="text-white text-2xl z-20" />}
                     </button>
                 </div>
-                <ul className="hidden lg:flex space-x-4">
+                <ul className="hidden lg:flex space-x-4 font-bold text-2">
                     <li>
                         <NavLink
                             to="/"
@@ -60,6 +60,14 @@ const Navbar = () => {
                             className={getNavLinkClass}
                         >
                             Pose Tracking
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/exercise"
+                            className={getNavLinkClass}
+                        >
+                            Exercises
                         </NavLink>
                     </li>
                 </ul>

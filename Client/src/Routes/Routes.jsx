@@ -1,11 +1,17 @@
+/* eslint-disable react/prop-types */
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 
 // Lazy load the components
+// eslint-disable-next-line react-refresh/only-export-components
 const Home = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.Home })));
+// eslint-disable-next-line react-refresh/only-export-components
 const GroqComponent = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.GroqComponent })));
+// eslint-disable-next-line react-refresh/only-export-components
 const Layout = lazy(() => import("../Layout"));
+// eslint-disable-next-line react-refresh/only-export-components
 const PostureTraker = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.PostureTraker })));
+const ExercisePage = lazy(() => import("../Pages/pageRoute.js").then(module => ({ default: module.ExercisePage })));
 
 // Error boundary component
 class ErrorBoundary extends React.Component {
@@ -86,6 +92,16 @@ const router = createBrowserRouter(
                     <ErrorBoundary>
                         <Suspense fallback={<Loading />}>
                             <PostureTraker />
+                        </Suspense>
+                    </ErrorBoundary>
+                }
+            />
+            <Route
+                path="exercise"
+                element={
+                    <ErrorBoundary>
+                        <Suspense fallback={<Loading />}>
+                            <ExercisePage />
                         </Suspense>
                     </ErrorBoundary>
                 }

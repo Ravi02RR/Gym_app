@@ -28,7 +28,8 @@ app.use('/userservice', createProxyMiddleware({
 }));
 app.use('/paymentservice', createProxyMiddleware({
     target: paymentService,
-    changeOrigin: true
+    changeOrigin: true,
+    
 }));
 
 

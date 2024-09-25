@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "name": "Push-Up",
+      "category": "Chest",
+      "target_body_part": "Chest, Shoulders, Triceps",
+      "description": "Strengthens the chest, shoulders, and triceps.",
+      "image": "https://example.com/images/push-up.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=_l3ySVKYVJ8"
+    },
+    {
+      "name": "Incline Bench Press",
+      "category": "Chest",
+      "target_body_part": "Upper Chest, Shoulders",
+      "description": "Targets the upper chest and shoulders.",
+      "image": "https://example.com/images/incline-bench-press.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=DbFgADa2PL8"
+    },
+    {
+      "name": "Flat Bench Press",
+      "category": "Chest",
+      "target_body_part": "Chest, Triceps, Shoulders",
+      "description": "A compound lift targeting the chest and triceps.",
+      "image": "https://example.com/images/flat-bench-press.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=rT7DgCr-3pg"
+    },
+    {
+      "name": "Chest Fly",
+      "category": "Chest",
+      "target_body_part": "Chest",
+      "description": "Isolation exercise for the chest muscles.",
+      "image": "https://example.com/images/chest-fly.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=eozdVDA78K0"
+    },
+    {
+      "name": "Squat",
+      "category": "Legs",
+      "target_body_part": "Quadriceps, Glutes, Hamstrings",
+      "description": "Compound lower-body exercise targeting multiple muscles.",
+      "image": "https://example.com/images/squat.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=aclHkVaku9U"
+    },
+    {
+      "name": "Deadlift",
+      "category": "Back",
+      "target_body_part": "Back, Glutes, Hamstrings",
+      "description": "A powerful compound exercise for the back and lower body.",
+      "image": "https://example.com/images/deadlift.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=op9kVnSso6Q"
+    },
+    {
+      "name": "Lunges",
+      "category": "Legs",
+      "target_body_part": "Quads, Glutes",
+      "description": "Targets the quads, hamstrings, and glutes.",
+      "image": "https://example.com/images/lunges.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=COKYKgQ8KR0"
+    },
+    {
+      "name": "Leg Press",
+      "category": "Legs",
+      "target_body_part": "Quadriceps, Hamstrings",
+      "description": "Machine-based lower-body exercise to build leg strength.",
+      "image": "https://example.com/images/leg-press.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=IZxyjW7MPJQ"
+    },
+    {
+      "name": "Calf Raise",
+      "category": "Legs",
+      "target_body_part": "Calves",
+      "description": "Strengthens and tones the calf muscles.",
+      "image": "https://example.com/images/calf-raise.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=-M4-G8p8fmc"
+    },
+    {
+      "name": "Romanian Deadlift",
+      "category": "Legs",
+      "target_body_part": "Hamstrings, Glutes",
+      "description": "Strengthens the hamstrings and glutes while engaging the lower back.",
+      "image": "https://example.com/images/romanian-deadlift.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=2SHsk9AzdjA"
+    },
+    {
+      "name": "Pull-Up",
+      "category": "Back",
+      "target_body_part": "Lats, Biceps",
+      "description": "Bodyweight exercise targeting the back and biceps.",
+      "image": "https://example.com/images/pull-up.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=eGo4IYlbE5g"
+    },
+    {
+      "name": "Lat Pulldown",
+      "category": "Back",
+      "target_body_part": "Lats",
+      "description": "Isolation exercise for strengthening the lat muscles.",
+      "image": "https://example.com/images/lat-pulldown.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=CAwf7n6Luuc"
+    },
+    {
+      "name": "Barbell Row",
+      "category": "Back",
+      "target_body_part": "Back, Biceps",
+      "description": "Strengthens the upper back and biceps.",
+      "image": "https://example.com/images/barbell-row.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=ZlRrIsoDpKg"
+    },
+    {
+      "name": "Seated Cable Row",
+      "category": "Back",
+      "target_body_part": "Middle Back",
+      "description": "Machine-based exercise for strengthening the back.",
+      "image": "https://example.com/images/seated-cable-row.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=IzoDgLJtj5A"
+    },
+    {
+      "name": "T-Bar Row",
+      "category": "Back",
+      "target_body_part": "Back, Lats",
+      "description": "Great for overall back development and strength.",
+      "image": "https://example.com/images/t-bar-row.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=1KPqCQN9cHM"
+    },
+    {
+      "name": "Bicep Curl",
+      "category": "Arms",
+      "target_body_part": "Biceps",
+      "description": "Isolates the bicep muscles.",
+      "image": "https://example.com/images/bicep-curl.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=ykJmrZ5v0Oo"
+    },
+    {
+      "name": "Hammer Curl",
+      "category": "Arms",
+      "target_body_part": "Biceps, Forearms",
+      "description": "Targets both the biceps and forearm muscles.",
+      "image": "https://example.com/images/hammer-curl.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=zC3nLlEvin4"
+    },
+    {
+      "name": "Tricep Dips",
+      "category": "Arms",
+      "target_body_part": "Triceps",
+      "description": "Bodyweight exercise for the triceps.",
+      "image": "https://example.com/images/tricep-dips.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=tKjcgfu44sI"
+    },
+    {
+      "name": "Skull Crushers",
+      "category": "Arms",
+      "target_body_part": "Triceps",
+      "description": "Isolation exercise for the triceps.",
+      "image": "https://example.com/images/skull-crushers.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=d_KZxkY_0cM"
+    },
+    {
+      "name": "Overhead Tricep Extension",
+      "category": "Arms",
+      "target_body_part": "Triceps",
+      "description": "Targets the long head of the triceps.",
+      "image": "https://example.com/images/overhead-tricep-extension.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=h0ojY4qMCF8"
+    },
+    {
+      "name": "Shoulder Press",
+      "category": "Shoulders",
+      "target_body_part": "Shoulders",
+      "description": "Compound upper body exercise for the deltoid muscles.",
+      "image": "https://example.com/images/shoulder-press.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=B-aVuyhvLHU"
+    },
+    {
+      "name": "Lateral Raise",
+      "category": "Shoulders",
+      "target_body_part": "Shoulders",
+      "description": "Isolation exercise for the lateral deltoid.",
+      "image": "https://example.com/images/lateral-raise.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=3VcKaXpzqRo"
+    },
+    {
+      "name": "Front Raise",
+      "category": "Shoulders",
+      "target_body_part": "Shoulders",
+      "description": "Strengthens the front deltoid muscles.",
+      "image": "https://example.com/images/front-raise.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=-t7fuZ0KhDA"
+    },
+    {
+      "name": "Reverse Pec Deck Fly",
+      "category": "Shoulders",
+      "target_body_part": "Rear Delts",
+      "description": "Targets the rear deltoids and upper back.",
+      "image": "https://example.com/images/reverse-pec-deck-fly.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=jHOxikOSUnU"
+    },
+    {
+      "name": "Plank",
+      "category": "Core",
+      "target_body_part": "Core",
+      "description": "Isometric exercise for the core muscles.",
+      "image": "https://example.com/images/plank.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=B296mZDhrP4"
+    },
+    {
+      "name": "Side Plank",
+      "category": "Core",
+      "target_body_part": "Obliques, Core",
+      "description": "Isometric hold targeting the obliques and core.",
+      "image": "https://example.com/images/side-plank.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=wqzrb67Dwf8"
+    },
+    {
+      "name": "Crunch",
+      "category": "Core",
+      "target_body_part": "Abs",
+      "description": "Strengthens the abdominal muscles.",
+      "image": "https://example.com/images/crunch.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=Xyd_fa5zoEU"
+    },
+    {
+      "name": "Leg Raise",
+      "category": "Core",
+      "target_body_part": "Lower Abs",
+      "description": "Targets the lower abdominal muscles.",
+      "image": "https://example.com/images/leg-raise.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=JB2oyawG9KI"
+    },
+    {
+      "name": "Russian Twists",
+      "category": "Core",
+      "target_body_part": "Obliques, Core",
+      "description": "Strengthens the core and obliques with rotation.",
+      "image": "https://example.com/images/russian-twists.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=wkD8rjkodUI"
+    },
+    {
+      "name": "Mountain Climbers",
+      "category": "Core",
+      "target_body_part": "Core, Full Body",
+      "description": "Dynamic exercise that strengthens the core and elevates the heart rate.",
+      "image": "https://example.com/images/mountain-climbers.jpg",
+      "youtube_link": "https://www.youtube.com/watch?v=nmwgirgXLYM"
+    }
+  ]
+}

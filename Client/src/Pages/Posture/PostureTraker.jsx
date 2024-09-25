@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const PostureTracker = () => {
     const [selectedExercise, setSelectedExercise] = useState('Squats');
-    const exercises = ['Squats', 'Push-ups'];
+    const exercises = ['Squats', 'Push-ups','Bicep Curls'];
 
     return (
         <div className="bg-gray-900  text-white overflow-x-hidden">
